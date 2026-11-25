@@ -1,0 +1,31 @@
+[
+  {
+    "sistema_desconocido": "apple_pay_beta",
+    "ref": "AP-991",
+    "total": 45.00
+  },
+  {
+    "source_system": "stripe",
+    "charge_id": "ch_EDGE_02",
+    "amount_cents": 0,
+    "currency_code": "USDC",
+    "charge_status": "en espera",
+    "created_at": "2026-11-20"
+  },
+  {
+    "plataforma": "paypal",
+    "txn_id": "PP-EDGE-03",
+    "gross_amount": "980.00",
+    "curr": "JPY",
+    "payment_status": "hold",
+    "payment_date": "2026-11-21"
+  },
+  {
+    "origen": "transferencia_local",
+    "numero_referencia": "TRF-EDGE-04",
+    "monto_transferido": "1500.00",
+    "divisa": "USD",
+    "estado_operacion": "procesando",
+    "fecha_operacion": "2026-11-22"
+  }
+]

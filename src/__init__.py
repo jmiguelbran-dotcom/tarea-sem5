@@ -1,0 +1,1 @@
+"""Paquete principal del Sistema Agéntico de Normalización y Auditoría de Transacciones."""

@@ -1,0 +1,90 @@
+{
+  "monedas_soportadas": {
+    "USD": ["usd", "$", "us$", "dolar", "dolares", "usdt"],
+    "EUR": ["eur", "€", "euro", "euros"],
+    "GBP": ["gbp", "£", "libra"],
+    "JPY": ["jpy", "¥", "yen"],
+    "MXN": ["mxn", "peso mexicano"],
+    "SVC": ["svc", "colon"],
+    "BTC": ["btc", "bitcoin", "₿"],
+    "ETH": ["eth", "ethereum"],
+    "SOL": ["sol", "solana"],
+    "USDC": ["usdc", "usd coin"]
+  },
+  "mapeo_estados": {
+    "COMPLETADO": ["completado", "completed", "succeeded", "pagado", "ok", "approved", "aprobado", "paid", "emitido"],
+    "PENDIENTE": ["pendiente", "pending", "en proceso", "en_proceso", "procesando", "processing", "hold", "en espera"],
+    "FALLIDO": ["fallido", "failed", "fallado", "declinado", "declined", "error", "rechazado", "rejected", "canceled", "cancelado"]
+  },
+  "formatos_fecha": [
+    "%Y-%m-%d",
+    "%d/%m/%Y",
+    "%m-%d-%Y",
+    "%Y/%m/%d",
+    "%Y-%m-%dT%H:%M:%S",
+    "%Y-%m-%d %H:%M:%S",
+    "%d-%m-%Y %H:%M"
+  ],
+  "definicion_fuentes": {
+    "STRIPE": {
+      "llave_identificadora": "charge_id",
+      "valor_sistema": ["source_system", "stripe"],
+      "campos": {
+        "id": "charge_id",
+        "monto": "amount_cents",
+        "es_centavos": true,
+        "moneda": "currency_code",
+        "estado": "charge_status",
+        "fecha": "created_at"
+      }
+    },
+    "PAYPAL": {
+      "llave_identificadora": "txn_id",
+      "valor_sistema": ["plataforma", "paypal"],
+      "campos": {
+        "id": "txn_id",
+        "monto": "gross_amount",
+        "es_centavos": false,
+        "moneda": "curr",
+        "estado": "payment_status",
+        "fecha": "payment_date"
+      }
+    },
+    "TRANSFERENCIA_LOCAL": {
+      "llave_identificadora": "numero_referencia",
+      "valor_sistema": ["origen", "transferencia_local"],
+      "campos": {
+        "id": "numero_referencia",
+        "monto": "monto_transferido",
+        "es_centavos": false,
+        "moneda": "divisa",
+        "estado": "estado_operacion",
+        "fecha": "fecha_operacion"
+      }
+    },
+    "PAGO_TARJETA": {
+      "llave_identificadora": "id_autorizacion",
+      "valor_sistema": ["canal", "pago_tarjeta"],
+      "campos": {
+        "id": "id_autorizacion",
+        "monto": "importe",
+        "es_centavos": false,
+        "moneda": "moneda_cobro",
+        "estado": "resultado_pos",
+        "fecha": "timestamp_pos"
+      }
+    },
+    "RECIBO_EFECTIVO": {
+      "llave_identificadora": "folio_recibo",
+      "valor_sistema": ["tipo_documento", "recibo_efectivo"],
+      "campos": {
+        "id": "folio_recibo",
+        "monto": "efectivo_recibido",
+        "es_centavos": false,
+        "moneda": "moneda_efectivo",
+        "estado": "estatus_recibo",
+        "fecha": "fecha_emision"
+      }
+    }
+  }
+}

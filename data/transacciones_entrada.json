@@ -1,0 +1,122 @@
+[
+  {
+    "source_system": "stripe",
+    "charge_id": "ch_3M9kL2",
+    "amount_cents": 15050,
+    "currency_code": "usd",
+    "charge_status": "succeeded",
+    "created_at": "2026-11-10T14:30:00"
+  },
+  {
+    "source_system": "stripe",
+    "charge_id": "ch_3M9kL9",
+    "amount_cents": 4500,
+    "currency_code": "btc",
+    "charge_status": "processing",
+    "created_at": "2026-11-11"
+  },
+  {
+    "plataforma": "paypal",
+    "txn_id": "PP-8849201",
+    "gross_amount": "$250.75",
+    "curr": "US$",
+    "payment_status": "completed",
+    "payment_date": "12/11/2026"
+  },
+  {
+    "plataforma": "paypal",
+    "txn_id": "PP-8849205",
+    "gross_amount": "89.99",
+    "curr": "€",
+    "payment_status": "declined",
+    "payment_date": "13/11/2026"
+  },
+  {
+    "origen": "transferencia_local",
+    "numero_referencia": "TRF-SV-00912",
+    "monto_transferido": "1200.00",
+    "divisa": "dolar",
+    "estado_operacion": "en proceso",
+    "fecha_operacion": "2026/11/10"
+  },
+  {
+    "origen": "transferencia_local",
+    "numero_referencia": "TRF-SV-00915",
+    "monto_transferido": 500.5,
+    "divisa": "ETH",
+    "estado_operacion": "pagado",
+    "fecha_operacion": "11-12-2026"
+  },
+  {
+    "canal": "pago_tarjeta",
+    "id_autorizacion": "POS-44510",
+    "importe": 75.259,
+    "moneda_cobro": "MXN",
+    "resultado_pos": "aprobado",
+    "timestamp_pos": "2026-11-14 09:15:00"
+  },
+  {
+    "canal": "pago_tarjeta",
+    "id_autorizacion": "POS-44518",
+    "importe": "320.10",
+    "moneda_cobro": "SOL",
+    "resultado_pos": "rechazado",
+    "timestamp_pos": "2026-11-14 18:40:22"
+  },
+  {
+    "tipo_documento": "recibo_efectivo",
+    "folio_recibo": "REC-00104",
+    "efectivo_recibido": "45.00",
+    "moneda_efectivo": "SVC",
+    "estatus_recibo": "completado",
+    "fecha_emision": "15-11-2026 10:00"
+  },
+  {
+    "tipo_documento": "recibo_efectivo",
+    "folio_recibo": "REC-00105",
+    "efectivo_recibido": 100,
+    "moneda_efectivo": "GBP",
+    "estatus_recibo": "pendiente",
+    "fecha_emision": "15/11/2026"
+  },
+  {
+    "source_system": "stripe",
+    "charge_id": "ch_ERR_01",
+    "amount_cents": -5000,
+    "currency_code": "usd",
+    "charge_status": "succeeded",
+    "created_at": "2026-11-10"
+  },
+  {
+    "plataforma": "paypal",
+    "txn_id": "",
+    "gross_amount": "150.00",
+    "curr": "USD",
+    "payment_status": "completed",
+    "payment_date": "12/11/2026"
+  },
+  {
+    "origen": "transferencia_local",
+    "numero_referencia": "TRF-ERR-03",
+    "monto_transferido": "300.00",
+    "divisa": "DOGECOIN_FAKE",
+    "estado_operacion": "pagado",
+    "fecha_operacion": "2026-11-11"
+  },
+  {
+    "canal": "pago_tarjeta",
+    "id_autorizacion": "POS-ERR-04",
+    "importe": "99.99",
+    "moneda_cobro": "EUR",
+    "resultado_pos": "estado_inventado",
+    "timestamp_pos": "2026-11-14 12:00:00"
+  },
+  {
+    "tipo_documento": "recibo_efectivo",
+    "folio_recibo": "REC-ERR-05",
+    "efectivo_recibido": "25.50",
+    "moneda_efectivo": "USD",
+    "estatus_recibo": "pagado",
+    "fecha_emision": "2026-02-30"
+  }
+]
